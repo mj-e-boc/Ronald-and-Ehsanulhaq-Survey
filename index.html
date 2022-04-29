@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="styles.css" />
+  <title>Survey Forum</title>
+</head>
+<body>
+  
+  <header>
+    <section class="title-text">
+      <h1 id="title">Survey Form</h1>
+      <p id="description" class="title-text"><em style="font-size: 90%;">A sample survey about internet usage form by Ronald and ehsan (Microverse)</em></p>
+    </section>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <section id="survey-fields">
+     
+        <label for="name" id="name-label">* Name:</label>
+        <input id="name" type="text" placeholder="Enter your name..." required>
+        <label for="Email" id="email-label">* Email:</label>
+        <input id="email"  type="email" placeholder="Enter your email..." required>
+        <label for="number" id="number-label">* phone number:</label>
+        <input id="number" type="number" placeholder="enter a random number .." min=1 max=2000 required>
+      
+       
+        <label for="dropdown">What is your current occupation?</label>
+        <select id="dropdown" form="survey-form">
+          <option value="" disabled selected>select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Doctor</option>
+          <option value="full-time-learner">Engineer</option>
+          <option value="prefer-not">unemployeed</option>
+          <option value="other">Other</option>
+        </select>
+      
+        
+        <label for="recommendation">* what is your Geneder </label>
+        <fieldset id="recommendation">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="Male" required>Male</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="Female" required>Female</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="not known" required>Not known</label>
+        </fieldset>
+        
+   
+  
+        <label for="improvements">Whatfore you are using Internet daily:</label>
+        <fieldset id="improvements">
+          <legend>(<em>Check your choice </em>)</legend>
+          <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="study">Studying</label>
+          <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="gaming">Gaming</label>
+          <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="watching movies">Watching movies</label>
+          <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="freelancing">Freelancing</label>
+          <label for="c-osc"><input type="checkbox" name="improve-checks" id="c-osc" value="for social communication">Communication</label>
+          <label for="c-ghr"><input type="checkbox" name="improve-checks" id="c-ghr" value="events">events</label>
+          <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="marketing">marketing</label>
+        </fieldset>
+       
+        <label for="comments">Any extra Comments or Suggestions?</label>
+        <textarea style="height:50px;resize:vertical;" id="comments" placeholder="enter your valuable comments here...."></textarea>
+      </section>
+      <button id="submit">submit</button>
+    </form>
+  </main>
+
+
+</body>
+</html>
+
+
+
+
+
+

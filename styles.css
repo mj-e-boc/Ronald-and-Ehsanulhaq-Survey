@@ -1,0 +1,132 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  --background-c:   background-color: rgb(138, 226, 163);
+;
+  background-color:  rrgb(0, 255, 72)
+  ;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", Helvetica, sans-serif;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+header {
+  padding-bottom: 15px;
+  position: fixed;
+  /* background-color: var(--background-c, lightgray); */
+  width: 100%;
+  z-index: 1;
+  top: 0%;
+  color:rgb(138, 226, 163);
+  font-weight: bold;
+  
+}
+
+main {
+  background-color: rgb(138, 226, 163);
+  height: 90%;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  position: relative;
+  top: 100px;
+  border-radius: 25px;
+  text-align: left;
+  box-shadow: 1em 1em 4em;
+  
+}
+
+@media (max-width: 400px) {
+  main {
+    top: 65px;
+  }
+}
+
+.title-text {
+  margin: auto;
+  margin-top: -5px;
+  text-align: center;
+}
+
+#description {
+  margin-top: 10px;
+  color:black;
+ 
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+#survey-fields {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  #survey-fields {
+    grid-template-columns: 1fr;
+  }
+  label {
+    text-align: left;
+  }
+}
+
+@media (min-width: 600px) {
+  #survey-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  label {
+    text-align: left;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  border: 0;
+  min-width: 100%;
+}
+
+fieldset label:hover {
+  font-weight: bold;
+}
+
+#submit {
+  margin: auto;
+  background-color: var(--background-c, lightgray);
+  border-radius: 8px;
+  padding: 5px 12px 5px 12px;
+  margin-top: 5px;
+  font-size: 85%;
+  width: 100px;
+  outline: 1;
+margin-bottom: 10px;
+}
+
+#submit:hover{
+  background-color: white;
+  color:rgb(138, 226, 163);
+  font-weight: bold;
+}
